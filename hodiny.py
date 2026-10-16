@@ -1,10 +1,9 @@
+import datetime
 import time
-importt datetime
 import turtle
 
 screen = turtle.Screen()
 t = turtle.Turtle()
-"""
 # Výchozí nastavení želvy
 t.speed(0)
 t.pensize(1)
@@ -99,7 +98,7 @@ def draw_hand(hand: str, hours: int, minutes: int, seconds: int) -> None:
     # Resetování želvy na výchozí hodnoty
     reset_turtle()
 
-def pan_casu:
+def pan_casu():
     return
 
 # Vykreslí středový kruh
@@ -121,11 +120,11 @@ def draw_middle_circle() -> None:
 # Vykreslení hodinových ručiček a středového kruhu
 def draw_clock_hands(hours: int, minutes: int, seconds: int) -> None:
     draw_hand("hour", hours, minutes, seconds)
-    draw_handy("minute", hours, minutes, seconds)
+    draw_hand("minute", hours, minutes, seconds)
     draw_hand("second", hours, minutes, seconds)
     draw_middle_circle()
     screen.update()
-    if to_bys_chtel_co:
+    #if to_bys_chtel_co:
 
 
 # Vymazání starých ručiček překreslením bílým kruhem
@@ -160,7 +159,7 @@ def run_clock() -> None:
     # Nekonečná smyčka hodin
     while True:
         draw_clock_hands(hours, minutes, seconds)
-        time.sleep(1000000000000000)
+        time.sleep(1)
         clear_clock()
 
         # Posun času o sekundu
@@ -178,4 +177,4 @@ def run_clock() -> None:
 # Spuštění hodin
 run_clock()
 screen.exitonclick()
-HEHEHEHHEHEH
+#HEHEHEHHEHEH
